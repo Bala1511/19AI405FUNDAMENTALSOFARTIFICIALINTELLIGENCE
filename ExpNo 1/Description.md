@@ -1,6 +1,6 @@
 <h1>ExpNo 1 : Implement Depth First Search Traversal of a Graph</h1> 
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: BALA MURUGAN P</h3>
+<h3>Register Number:212222230017</h3>
 <H3>Aim:</H3>
 <p> To Implement Depth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -94,11 +94,10 @@ D F <BR>
 G F <BR>
 F H <BR>
 <hr>
-<h3>Sample Output</h3>
+<h3>Sample output</h3>
 <hr>
-['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
 
-<hr>
+![image](https://github.com/Bala1511/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/154d9eeb-99cf-4010-9b25-2df3923c7388)
 
 <hr>
 <h3>Sample Input</h3>
@@ -112,7 +111,10 @@ F H <BR>
 <hr>
 <h3>Sample Output</h3>
 <hr>
-['0', '1', '2', '3', '4']
+
+![image](https://github.com/Bala1511/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/dd164371-16da-4cf1-9904-11a327620590)
+
+
 
 <hr>
 <h3>Result:</h3>
