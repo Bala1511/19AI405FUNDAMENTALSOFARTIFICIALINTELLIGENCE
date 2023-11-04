@@ -1,6 +1,6 @@
-<h1>ExpNo 2 : Implement Breadth First Search Traversal of a Graph</h1> 
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+![278595073-16e8d97f-a542-41e4-ae36-f2add0879a78](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/5bafc2a4-2b17-42da-9cf8-e18c654aa232)![278595073-16e8d97f-a542-41e4-ae36-f2add0879a78](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/35d52e1e-b1da-4432-b75b-2ec492492b11)![278595073-16e8d97f-a542-41e4-ae36-f2add0879a78](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/88d98026-5f29-4bc4-9b80-e9b85ac38661)<h1>ExpNo 2 : Implement Breadth First Search Traversal of a Graph</h1> 
+<h3>Name: BALA MURUGAN</h3>
+<h3>Register Number: 212222230017</h3>
 <H3>Aim:</H3>
 <p>To Implement Breadth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -68,6 +68,57 @@ Now, Queue becomes empty, So, terminate these process of iteration.
 </ol>
 
 <hr>
+<h3>PROGRAM</h3>
+<hr>
+
+```
+from collections import deque
+from collections import defaultdict
+
+
+'''
+V E
+FOR EVERY EDGE
+U V
+7 9
+A B
+A C 
+A F
+C E
+C F
+C D
+D E 
+D G
+G F
+'''
+def bfs(graph,start,visited,path):
+    queue = deque()
+    path.append(start)
+    queue.append(start)
+    visited[start] = True
+    while len(queue) != 0:
+        tmpnode = queue.popleft()
+        for neighbour in graph[tmpnode]:
+            if visited[neighbour] == False:
+                path.append(neighbour)
+                queue.append(neighbour)
+                visited[neighbour] = True
+    return path
+
+graph = defaultdict(list)
+v,e = map(int,input().split())
+for i in range(e):
+    u,v = map(str,input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+
+start = '0'
+path = []
+visited = defaultdict(bool)
+traversedpath = bfs(graph,start,visited,path)
+print(traversedpath)
+```
+<hr>
 <h3>Sample Input</h3>
 <hr>
 7 9 <BR>
@@ -83,24 +134,20 @@ G F <BR>
 <hr>
 <h3>Sample Output</h3>
 <hr>
-['A', 'B', 'C', 'F', 'E', 'D', 'G']
 
-<hr>
+![278595073-16e8d97f-a542-41e4-ae36-f2add0879a78](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/aac627ce-6937-40b2-9c89-99c2dbcf702a)
 
-<hr>
-<h3>Sample Input</h3>
-<hr>
-5 6 <BR>
-0 1 <BR>
-0 2 <BR>
-1 2 <BR>
-1 3 <BR>
-2 4 <BR>
-3 4 <BR>
+
+
+
 <hr>
 <h3>Sample Output</h3>
 <hr>
-['0', '1', '2', '3', '4']
+
+![278595156-2bede138-73ae-4d57-801e-16b542831be1](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118680410/cc9419a3-a75b-46e6-b64f-8e579b9a51e0)
+
+
+
 <hr>
 <h3>Result:</h3>
 <hr>
