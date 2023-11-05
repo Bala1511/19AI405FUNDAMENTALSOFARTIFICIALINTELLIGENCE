@@ -156,4 +156,5 @@ while(player):
 <hr>
 <h1>RESULT</h1>
 <hr>
-
+Successfully solved Wumpus World Problem using Python demonstrating Inferences from
+Propositional Logic.
